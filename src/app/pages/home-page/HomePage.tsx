@@ -1,4 +1,9 @@
-import './homePage.css'
+import './homePage.css';
+import paperImg from '../../assets/Images/Paper.png';
+import activiyImg from '../../assets/Images/Activity.png';
+import users from '../../assets/Images/3 User.png';
+import bagImg from '../../assets/Images/Bag.png';
+import sendImg from '../../assets/Images/send.png';
 
 const HomePage = () => {
   return (
@@ -7,38 +12,42 @@ const HomePage = () => {
         <div className='row'>
           <div className='col-lg-3 col-sm-6 col-md-6'>
             <div className='card custom-card d-flex align-items-start justify-content-center'>
+              <img src={sendImg} className='send-img' />
               <div className="mb-3 ms-3">
-                <i className="fas fa-user fs-5 text-white"></i>
+                <img src={paperImg} />
               </div>
-              <div className="mb-1 text-white">Chromeleon</div>
-              <div className="fw-bold fs-4 text-white">345</div>
+              <div className="mb-1 text-white card-text">Chromeleon</div>
+              <div className="text-white counter">345</div>
             </div>
           </div>
           <div className='col-lg-3 col-sm-6 col-md-6'>
             <div className='card custom-card d-flex align-items-start justify-content-center'>
+              <img src={sendImg} className='send-img' />
               <div className="mb-3 ms-3">
-                <i className="fas fa-user fs-5 text-white"></i>
+                <img src={activiyImg} />
               </div>
-              <div className="mb-1 text-white">Lab Solutions</div>
-              <div className="fw-bold fs-4 text-white">193</div>
+              <div className="mb-1 text-white card-text">Lab Solutions</div>
+              <div className="text-white counter">193</div>
             </div>
           </div>
           <div className='col-lg-3 col-sm-6 col-md-6'>
             <div className='card custom-card d-flex align-items-start justify-content-center'>
+              <img src={sendImg} className='send-img' />
               <div className="mb-3 ms-3">
-                <i className="fas fa-users fs-5 text-white"></i>
+                <img src={users} />
               </div>
-              <div className="mb-1 text-white">ICDAS ins</div>
-              <div className="fw-bold fs-4 text-white">349</div>
+              <div className="mb-1 text-white card-text">ICDAS ins</div>
+              <div className="text-white counter">349</div>
             </div>
           </div>
           <div className='col-lg-3 col-sm-6 col-md-6'>
             <div className='card custom-card d-flex align-items-start justify-content-center'>
+              <img src={sendImg} className='send-img' />
               <div className="mb-3 ms-3">
-                <i className="fas fa-user fs-5 text-white"></i>
+                <img src={bagImg} />
               </div>
-              <div className="mb-1 text-white">LIMS ins</div>
-              <div className="fw-bold fs-4 text-white">500</div>
+              <div className="mb-1 text-white card-text">LIMS ins</div>
+              <div className="text-white counter">500</div>
             </div>
           </div>
         </div>

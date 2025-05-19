@@ -1,0 +1,13 @@
+.screen {
+    background-color: #11A2D5;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-splash {
+    max-width: 200px;
+    width: 100%;
+}
