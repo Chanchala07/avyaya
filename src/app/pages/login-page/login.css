@@ -1,49 +1,15 @@
 .login-container {
   display: flex;
-  width: calc(100vw - 60px); /* Leave 30px gap on both left and right */
-  height: calc(100vh - 60px); /* Leave 30px gap on top and bottom */
-  font-family: Arial, sans-serif;
-  margin: 30px; 
-  box-sizing: border-box;
-}
-
-.login-left {
-  width: 40%;
-  flex-shrink: 0; 
-  background: linear-gradient(45deg, skyblue, blue,skyblue);
-  color: white;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-}
-.avyaya-text {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: absolute;
-  top: 50px;
-  left: 60px;
-}
-.login-logo {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.login-title {
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 5px;
+  height: 100vh;
+  background-color: #11A2D5;
 }
 .login-right {
-  flex: 1;
-  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
+  flex: 1;
 }
 
 .login-form {
@@ -51,19 +17,15 @@
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 80%;
+  /* width: 80%; */
   max-width: 500px;
-  border: 1px solid #111111
+  border: 1px solid #111111;
 }
 
 .login-form h2 {
   margin-bottom: 20px;
 }
-.login-left h2{
-  font-size: 48px;
-  padding: 20px 50px;
-  text-align: left;
-}
+
 .login-form input {
   width: 100%;
   padding: 10px;
@@ -79,13 +41,43 @@
   background-color: #4153EF;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 .login-form button:hover {
   background-color: #4153EF;
 }
-.form-check-input{
+
+.form-check-input {
   width: 20px !important;
+}
+.login-outer-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  /* width: 90%; */
+  max-width: 600px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.outer-heading {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.outer-subtext {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+.login-logo {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 150px; /* Adjust as needed */
+  height: auto;
 }

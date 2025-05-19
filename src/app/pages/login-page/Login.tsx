@@ -1,41 +1,34 @@
 import './login.css';
-import avyayaIcon from '../../assets/Images/avyaya-icon.png'
 import { Link } from 'react-router-dom';
+import logo from '../../assets/Images/Frame 1000003750.png'
 
 const Login = () => {
   return (
     <>
       <div className="login-container">
-        <div className="login-left">
-          <div className='avyaya-text'>
-            <img src={avyayaIcon} alt="Logo" className="login-logo" />
-            <span className="login-title">AVYAYA</span>
-          </div>
-          <h2>Welcome to Avyaya Early
-            Warning System</h2>
-        </div>
+         <img src={logo} alt="VeggieGo Logo" className="login-logo" />
+        <div className="login-outer-box">
+          <h1 className="outer-heading">Welcome to Avyaya</h1>
+          <p className="outer-subtext">Avyaya is a fast, simple and secure way to avyaya data.  </p>
 
-        <div className="login-right">
-          <form className="login-form">
-            <h2 className='text-start'>Log In</h2>
-            <input type="text" placeholder="Employee Id" />
-            <input type="password" placeholder="Password" />
+          <div className="login-right">
+            <form className="login-form">
+              <h2 className='text-start'>Log In</h2>
+              <input type="text" placeholder="Employee Id" />
+              <input type="password" placeholder="Password" />
 
-            <div className='d-flex justify-content-between align-items-center'>
-              <div className="form-check mb-0">
-                <input className="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
-                <label className="form-check-label">
-                  Remember for 30 days
-                </label>
+              <div className='d-flex justify-content-end align-items-center'>
+                <Link to='/' className=''>Forgot password</Link>
               </div>
-              <Link to='/' className=''>Forgot password</Link>
-            </div>
-            <Link to="/layout/dashboard">
-              <button type="submit" className='mt-4'>Login</button>
-            </Link>
-          </form>
+
+              <Link to="/layout/dashboard">
+                <button type="submit" className='mt-4'>Login</button>
+              </Link>
+            </form>
+          </div>
         </div>
       </div>
+
     </>
   );
 };

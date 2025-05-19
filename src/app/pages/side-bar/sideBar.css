@@ -9,7 +9,6 @@
     background-color: #F5F6FE;
 }
 
-/* Logo styles */
 .logo {
     position: relative;
     padding: 7px 0.7rem;
@@ -17,4 +16,48 @@
 
 .logo img {
     width: 100%;
+}
+ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin: 10px 0;
+}
+
+.menu-item {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu a {
+  color: #cfd2dc;
+  text-decoration: none;
+}
+
+.sidebar a {
+  color: #000;
+  text-decoration: none;
+}
+
+.arrow {
+  font-size: 12px;
 }
