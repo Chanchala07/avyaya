@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("./app/assets/font/SF-Pro-Text-Regular.otf");
+}
+body{
+    font-family: "SF Pro Text" !important;
+}

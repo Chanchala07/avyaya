@@ -64,9 +64,10 @@
 }
 
 .outer-heading {
-  font-size: 28px;
+  font-size: 40px;
   color: #333;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .outer-subtext {
@@ -80,4 +81,7 @@
   left: 25px;
   width: 150px; /* Adjust as needed */
   height: auto;
+}
+.text-color{
+  color: #001AFF !important;
 }

@@ -1,45 +1,51 @@
 import './header.css';
+import notification from '../../assets/Images/notification.png';
+import message from '../../assets/Images/message.png';
+import menu from '../../assets/Images/menu.png';
+import avatar from '../../assets/Images/Avatar.png'
 
 const Header = () => {
   return (
     <>
       <div className='header'>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="#">Navbar</a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Link</a>
-                </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                    <li><hr className="dropdown-divider"/></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled" href="#"  aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-              <form className="d-flex">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                  <button className="btn btn-outline-success" type="submit">Search</button>
-              </form>
+        <div className="d-flex justify-content-between align-items-center w-100">
+          <div className="d-flex align-items-center gap-5">
+
+            <div className='menu'>
+              <img src={menu} />
+            </div>
+
+            <form className="d-flex" role="search">
+              <input
+                className="form-control custom-input"
+                type="search"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+            </form>
+          </div>
+
+          <div className="d-flex align-items-center gap-3">
+            <div className="menu">
+              <img src={message} />
+            </div>
+            <div className="menu">
+              <img src={notification} />
+            </div>
+            <div className="vertical-line"></div>
+            <div className="d-flex align-items-center gap-2">
+              <img
+                src={avatar}
+                alt="User"
+                className="user-image"
+              />
+              <div className="d-flex flex-column text-start">
+                <span className="user-name">John Doe</span>
+                <span className="user-id">Emp: 2145872356</span>
+              </div>
             </div>
           </div>
-        </nav>
+        </div>
       </div>
     </>
   )

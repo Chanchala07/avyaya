@@ -4,7 +4,9 @@ const Footer = () => {
   return (
     <>
       <div className='footer'>
-        <h1>footer</h1>
+        <div className='d-flex justify-content-end'>
+          <span className='footer-text'>Copyright © 2025 Avyaya Inc Sol. All rights reserved.</span>
+        </div>
       </div>
     </>
   )
