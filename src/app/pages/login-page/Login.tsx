@@ -18,11 +18,11 @@ const Login = () => {
               <input type="password" placeholder="Password" />
 
               <div className='d-flex justify-content-end align-items-center'>
-                <Link to='/' className=''>Forgot password</Link>
+                <Link to='/' className='text-color'>Forgot password</Link>
               </div>
 
               <Link to="/layout/dashboard">
-                <button type="submit" className='mt-4'>Login</button>
+                <button type="submit" className='mt-4 '>Login</button>
               </Link>
             </form>
           </div>

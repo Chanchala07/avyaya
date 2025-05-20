@@ -1,0 +1,35 @@
+.custom-button{
+    background-color: #ECEEFD !important;
+    padding : 30px 25px;
+    border-top-left-radius:25px !important;
+    border-top-right-radius: 25px !important;
+}
+.accordion-button:focus{
+    box-shadow: none ;
+}
+.accordion-body {
+    padding: 0px;
+}
+.accordion-item{
+    border: none;
+}
+.nav-heading{
+    font-size: 24px;
+    font-weight: 400;
+}
+.nav-link{
+    color: #111111;
+    border-radius: 8px;
+}
+.nav-tabs{
+    border: none;
+    background-color: #F6F7FE;
+}
+.nav-link.active{
+    background-color: #ECEEFD !important;
+    border: none;
+}
+.accordion-heading{
+    font-size: 24px;
+    color: #111111;
+}
