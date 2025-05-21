@@ -41,7 +41,7 @@ const Header = () => {
               />
               <div className="d-flex flex-column text-start">
                 <span className="user-name">John Doe</span>
-                <span className="user-id">Emp: 2145872356</span>
+                {/* <span className="user-id">Emp: 2145872356</span> */}
               </div>
             </div>
           </div>

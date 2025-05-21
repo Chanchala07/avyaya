@@ -25,6 +25,7 @@ ul {
 .sidebar-menu {
   list-style: none;
   padding-left: 30px;
+  padding-right: 20px;
 }
 
 .sidebar-menu li {
@@ -45,7 +46,7 @@ ul {
 }
 
 .submenu li {
-  margin: 18px 0;
+  margin: 15px 0;
 }
 
 .submenu a {
@@ -60,4 +61,32 @@ ul {
 
 .arrow {
   font-size: 12px;
+}
+.menu-toggle img,
+.menu-link img {
+  filter: grayscale(100%) brightness(0);
+  transition: filter 0.3s;
+}
+
+.menu-toggle span,
+.menu-link span {
+  color: #333;
+  transition: color 0.3s;
+}
+
+.menu-toggle.active img,
+.menu-link.active img {
+  filter: brightness(0) invert(1);
+}
+
+.menu-toggle.active span,
+.menu-link.active span {
+  color: #fff; 
+}
+.menu-list.active{
+  background: blue;
+}
+.menu-list{
+  border-radius: 8px;
+  padding: 8px 10px;
 }

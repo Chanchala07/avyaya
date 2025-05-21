@@ -1,6 +1,6 @@
 .custom-button{
     background-color: #ECEEFD !important;
-    padding : 30px 25px;
+    padding : 20px 25px;
     border-top-left-radius:25px !important;
     border-top-right-radius: 25px !important;
 }
@@ -21,6 +21,13 @@
     color: #111111;
     border-radius: 8px;
 }
+.btn-pull{
+    background-color: #4153EF;
+    color: #fff;
+        padding: 11px;
+        font-size: 16px;
+        font-weight: 500;
+}
 .nav-tabs{
     border: none;
     background-color: #F6F7FE;
@@ -31,5 +38,15 @@
 }
 .accordion-heading{
     font-size: 24px;
+    color: #111111;
+}
+.download-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 11px;
+}
+.download-text{
     color: #111111;
 }
