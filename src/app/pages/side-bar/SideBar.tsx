@@ -6,26 +6,29 @@ import chartImg from '../../assets/Images/Chart1.png';
 import logoutImg from '../../assets/Images/logout.png';
 import settingImg from '../../assets/Images/setting-2.png';
 import helpImg from '../../assets/Images/noun-89103 1.png';
-import bagImg from '../../assets/Images/Bag1.png';
 import usersImg from '../../assets/Images/Users.png';
 import document from '../../assets/Images/Document.png';
 import vector from '../../assets/Images/Vector2.png';
 import activity from '../../assets/Images/Activity2.png';
-import sequenceImg from '../../assets/Images/Group 2898481.png' 
+import sequenceImg from '../../assets/Images/Group 2898481.png';
+import chartsvg from '../../assets/Images/Chartsvg.svg';
+import bagsvg from '../../assets/Images/Bag.svg'
 
-type MenuKey = 'instruments' | 'chameleon';
+type MenuKey = 'instruments' | 'chromeleon';
 
 const SideBar = () => {
   const [openMenu, setOpenMenu] = useState({
     instruments: false,
-    chameleon: false,
+    chromeleon: false,
   });
+  const [activeItem, setActiveItem] = useState('');
 
   const toggleMenu = (menu: MenuKey) => {
     setOpenMenu((prev) => ({
       ...prev,
       [menu]: !prev[menu],
     }));
+    setActiveItem(menu);
   };
 
   return (
@@ -37,24 +40,25 @@ const SideBar = () => {
         <ul className="sidebar-menu">
           <li>
             <div
-              className='d-flex justify-content-start align-items-center gap-3 menu-toggle'
+              className={`d-flex justify-content-start align-items-center gap-3 menu-list menu-toggle ${activeItem === 'instruments' ? 'active' : ''}`}
               onClick={() => toggleMenu('instruments')}
             >
-              <img src={chartImg} alt="icon" />
+              <img src={chartsvg} alt="icon" />
               <span>All Instruments</span>
             </div>
             {openMenu.instruments && (
               <ul className="submenu">
                 <li>
-                  <div onClick={() => toggleMenu('chameleon')} className="menu-toggle d-flex justify-content-start align-items-center gap-3">
-                    <img src={bagImg} />
+                  <div onClick={() => toggleMenu('chromeleon')}
+                    className={`d-flex justify-content-start align-items-center gap-3 menu-list menu-toggle ${activeItem === "chromeleon" ? 'active': ''}`}>
+                    <img src={bagsvg} />
                     <span>Chromeleon</span>
                   </div>
-                  {openMenu.chameleon && (
+                  {openMenu.chromeleon && (
                     <ul className="submenu">
                       <li>
-                        <Link to="/chameleon/link1"
-                          className="d-flex justify-content-start align-items-center gap-3"
+                        <Link to="/chromeleon/link1"
+                          className="d-flex justify-content-start align-items-center gap-3 menu-list"
                         >
                           <img src={sequenceImg} />
                           <span>Sequence...</span>
@@ -63,8 +67,8 @@ const SideBar = () => {
                       </li>
                       <li>
                         <Link
-                          to="/chameleon/link2"
-                          className="d-flex justify-content-start align-items-center gap-3"
+                          to="/chromeleon/link2"
+                          className="d-flex justify-content-start align-items-center gap-3 menu-list"
                         >
                           <img src={vector} alt="Injection" />
                           <span>Injection</span>
@@ -72,8 +76,8 @@ const SideBar = () => {
                       </li>
 
                       <li>
-                        <Link to="/chameleon/link2"
-                        className="d-flex justify-content-start align-items-center gap-3"
+                        <Link to="/chromeleon/link2"
+                          className="d-flex justify-content-start align-items-center gap-3 menu-list"
                         >
                           <img src={activity} />
                           <span>Dashboard</span>
