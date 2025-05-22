@@ -1,5 +1,5 @@
 import './splash.css'
-import logo from '../../assets/Images/splash_logo.png';
+import logo from '../../assets/Images/shared image.jpg';
 
 const splash = () => {
   return (

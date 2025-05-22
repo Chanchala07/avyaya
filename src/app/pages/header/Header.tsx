@@ -4,14 +4,14 @@ import message from '../../assets/Images/message.png';
 import menu from '../../assets/Images/menu.png';
 import avatar from '../../assets/Images/Avatar.png'
 
-const Header = () => {
+const Header = ({onMenuClick}: {onMenuClick: () => void}) => {
   return (
     <>
       <div className='header'>
         <div className="d-flex justify-content-between align-items-center w-100">
           <div className="d-flex align-items-center gap-5">
 
-            <div className='menu'>
+            <div className='menu' onClick={onMenuClick}>
               <img src={menu} />
             </div>
 
@@ -41,7 +41,6 @@ const Header = () => {
               />
               <div className="d-flex flex-column text-start">
                 <span className="user-name">John Doe</span>
-                {/* <span className="user-id">Emp: 2145872356</span> */}
               </div>
             </div>
           </div>
