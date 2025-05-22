@@ -3,7 +3,7 @@
     height: 100vh;
 }
 .main-panel {
-    margin-left: 260px; /* same as sidebar width */
+    margin-left: 260px;
     width: calc(100% - 260px);
     display: flex;
     flex-direction: column;
@@ -15,3 +15,7 @@
   overflow-y: auto;
 }
 
+.main-panel.full-width {
+  margin-left: 0;
+  width: 100%;
+}

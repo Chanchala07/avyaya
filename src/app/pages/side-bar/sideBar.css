@@ -48,7 +48,32 @@ ul {
 .submenu li {
   margin: 15px 0;
 }
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    z-index: 2000;
+  }
 
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .main-panel {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 1500;
+  }
+}
 .submenu a {
   color: #cfd2dc;
   text-decoration: none;

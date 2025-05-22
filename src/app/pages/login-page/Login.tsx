@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <>
       <div className="login-container">
-         <img src={logo} alt="VeggieGo Logo" className="login-logo" />
+        <img src={logo} alt="VeggieGo Logo" className="login-logo" />
         <div className="login-outer-box">
           <h1 className="outer-heading">Welcome to Avyaya</h1>
           <p className="outer-subtext">Avyaya is a fast, simple and secure way to avyaya data.  </p>
@@ -25,10 +25,9 @@ const Login = () => {
                 <button type="submit" className='mt-4 '>Login</button>
               </Link>
             </form>
-          </div>
+          </div>          
         </div>
       </div>
-
     </>
   );
 };
